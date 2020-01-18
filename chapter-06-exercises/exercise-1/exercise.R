@@ -24,7 +24,6 @@ toupper(now_doing)
 # variables `fav_1` and `fav_2`
 fav_1 <- 8
 fav_2 <- 17
-
 # Divide each number by the square root of 201 and save the new value in the
 # original variable
 
