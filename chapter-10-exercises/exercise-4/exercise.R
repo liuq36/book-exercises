@@ -4,7 +4,7 @@
 # file into a variable called `grants` using the `read.csv()`
 # Be sure to set your working directory in RStudio, and do NOT treat strings as 
 # factors!
-
+read.csv("data/gates_money.csv")
 
 # Use the View function to look at the loaded data
 
@@ -22,8 +22,9 @@
 
 # What was the mean grant value?
 
+mean(grant$total_amount)
 
-# What was the dollar amount of the largest grant?
+#What was the dollar amount of the largest grant?
 
 
 # What was the dollar amount of the smallest grant?
@@ -31,9 +32,17 @@
 
 # Which organization received the largest grant?
 
+grants$total_amount == min(grants$total_amount),"organization"]
+grants$organization
 
 # Which organization received the smallest grant?
-
+grants$total_amount == min(grants$total_amount),"organization"]
+grants$organization
 
 # How many grants were awarded in 2010?
+grants$start_year =="2010",])
+# How many omney were awarded in 2010?
+totaol_amount 
+start_year
 
+grants[grants$start_year =="2010","total_amounts"]
