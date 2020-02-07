@@ -62,7 +62,7 @@ summarize(to_sea,avg_delayed = mean(delayed_in_air,na.rm = TRUE))
 # (without showing any other data)!
 
 pull
-
+%>% 
 #%>% %>% %>% %>% %>% %>% %>% %>% %>% %>% %>% %>% %>% %>% %>% %>% %>% %>% %>% %>% %>% %>% %>% %>% %>% %>% %>% %>% %>% %>% %>% %>% %>% %>% %>% %>% %>% %>% %>% 
 
 round(c(2.1,2.98,3.0999),1)
@@ -76,4 +76,18 @@ filter()
 
 
 
+library("dplyr")
+library("nycflight")
+flights %>% 
+  mutate(gain_in_air = arr_delay - dep_delay) %>% 
+arrange(desc(gain_in_air))
 
+  
+  
+  
+  
+  
+  
+  
+  
+  
